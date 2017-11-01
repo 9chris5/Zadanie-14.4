@@ -10,7 +10,8 @@ var Movie = React.createClass({
         title: React.PropTypes.string.isRequired,
         desc: React.PropTypes.string.isRequired,
         pic: React.PropTypes.string.isRequired
-    }
+    },
+    render: React.createElement();
 });
 var MovieId = React.createClass({
     propTypes: {
@@ -50,9 +51,9 @@ var MoviesList = React.createClass({
     }
 });
 var HarryPotter = React.createElement(Movie, {
-    id: React.createElement(MovieId, {this.props.id = 1;}),
-    title: React.createElement(MovieTitle, {this.props.title = 'Harry Potter'}),
-    desc: React.createElement(MovieDesc, {this.props.title = 'cos tam cos tam...'}),
-    pic: React.createElement(MoviePic, {this.props.title = 'http://www.harrypotterforseekers.com/images/sym_crabbengoyle.jpg'}),
+    id: React.createElement(MovieId, {id: 1}),
+    title: React.createElement(MovieTitle, {title: 'Harry Potter'}),
+    desc: React.createElement(MovieDesc, {desc: 'cos tam cos tam...'}),
+    pic: React.createElement(MoviePic, {pic: 'http://www.harrypotterforseekers.com/images/sym_crabbengoyle.jpg'}),
 });
 ReactDOM.render(element, document.getElementById('app'));
